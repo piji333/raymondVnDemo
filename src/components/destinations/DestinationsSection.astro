@@ -6,15 +6,15 @@ import DestinationPresentation from "./DestinationPresentation.astro";
     <div class="section__inner ons">
         <div class="c_pad"></div>
         <div class="destinations">
-            <h2 class="ons_u" dly="500">
+            <h2 {...{class:"ons_u", dly:"500"}}>
                 Proven Expertise <br />
                 Across Viet Nam.
             </h2>
-            <div class="destinations__line ons_hol" dly="500"></div>
+            <div {...{class:"destinations__line ons_hol", dly:"500"}}></div>
 
-            <h3 class="ons_o" dly="500">Ha Noi・Ho Chi Minh・Da Nang・Hue・Hoa Binh etc.</h3>
+            <h3 {...{class:"ons_o", dly:"500"}}>Ha Noi・Ho Chi Minh・Da Nang・Hue・Hoa Binh etc.</h3>
             <div class="destinations__slide__wrap">
-                <div class="destinations__slide slick-doubles" sln="destinations__slide">
+                <div {...{class:"destinations__slide slick-doubles", sln:"destinations__slide"}}>
                     <DestinationPresentation
                         destinationName="Ha Noi"
                         image1Url="https://static.wixstatic.com/media/c46c87_666156a8556a411494b04d210cd8c651~mv2.jpg/v1/fill/w_974,h_724,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Phuong%2520Dong%2520Nursing%2520Home%2520View%25202_edited_edited.jpg"
@@ -49,21 +49,21 @@ import DestinationPresentation from "./DestinationPresentation.astro";
                 </div>
             </div>
             <div class="destinations__foot">
-                <a href="" class="destinations__foot__link sp">
+                <!-- <a href="" class="destinations__foot__link sp">
                     <span><center>Click!</center></span>
-                </a>
+                </a> -->
                 <div class="destinations__foot__text"><span class="destinations__foot__text__span">Tokyo</span></div>
                 <div class="destinations__foot__bar">
                     <div class="slide_bar__wrap">
-                        <div class="slide_bar" slt="destinations__slide"></div>
+                        <div {...{class:"slide_bar", slt:"destinations__slide"}}></div>
                     </div>
                 </div>
                 <div class="controls">
-                    <div class="controls__left hover_c" slt="destinations__slide"><div class="hover_c_ar"></div></div>
+                    <div {...{class:"controls__left hover_c", slt:"destinations__slide"}}><div class="hover_c_ar"></div></div>
                     <div class="controls__count">
-                        <div class="controls__count__in" slt="destinations__slide">-</div>
+                        <div {...{class:"controls__count__in", slt:"destinations__slide"}}>-</div>
                     </div>
-                    <div class="controls__right hover_c" slt="destinations__slide"><div class="hover_c_ar"></div></div>
+                    <div {...{class:"controls__right hover_c", slt:"destinations__slide"}}><div class="hover_c_ar"></div></div>
                 </div>
             </div>
         </div>

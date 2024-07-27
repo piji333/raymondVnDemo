@@ -1,3 +1,13 @@
 {
-  "extends": "astro/tsconfigs/strict"
+  // "extends": "astro/tsconfigs/strict"
+  // "strict": false,
+  // // Other options...
+  // "noImplicitAny": false,
+  // "strictNullChecks": false,
+  // "strictFunctionTypes": false,
+  // "strictBindCallApply": false,
+  // "strictPropertyInitialization": false,
+  // "noImplicitThis": false,
+  // "useUnknownInCatchVariables": false,
+  // "alwaysStrict": false
 }

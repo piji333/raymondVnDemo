@@ -1,4 +1,6 @@
 ---
+import CustomHTMLAttributes from '../../../types/customHTMLAttributes';
+
 export interface Props {
   imageUrl: string;
   date: string;
@@ -9,14 +11,14 @@ const { imageUrl, date, description } = Astro.props;
 ---
 
 <div class="act__slide__box">
-    <div class="slide_navr" slt="act__slide"></div>
+    <div {...{class: "slide_navr", slt: "act__slide"} as CustomHTMLAttributes}></div>
 
     <div class="card ons cardtype_post">
         <a href="/" class="card__all_a"></a>
         <div class="card_in">
             <div class="card__head">
                 <div class="card__head__photo__wrap">
-                    <div class="card__head__photo" b_style=`background-image: url('${imageUrl}');` ></div>
+                    <div {...{class:"card__head__photo", b_style:`background-image: url('${imageUrl}');`} as CustomHTMLAttributes} ></div>
                 </div>
             </div>
             <div class="card__cont">

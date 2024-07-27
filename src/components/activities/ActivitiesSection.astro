@@ -8,8 +8,8 @@ import ActivityCard from "./ActivityCard.astro";
         <div class="act">
             <div class="act__texts">
                 <div class="act__texts__in">
-                    <h2 class="ons_u" dly="500">Services We Offer</h2>
-                    <div class="act__texts__line ons_hol sp" dly="500"></div>
+                    <h2 {...{class:"ons_u", dly:"500"}}>Services We Offer</h2>
+                    <div {...{class:"act__texts__line ons_hol sp", dly:"500"}}></div>
                     <p>
                         <!-- Enchanting activities await you at every <br /> -->
                         Innovative solutions await at every <br />
@@ -25,7 +25,7 @@ import ActivityCard from "./ActivityCard.astro";
             <div class="act__slide__area cardheight">
                 <div class="act__slide__newnav act__slide__newnav_1"></div>
                 <div class="act__slide__newnav act__slide__newnav_2"></div>
-                <div class="act__slide" sln="act__slide">
+                <div {...{class:"act__slide", sln:"act__slide"}}>
 
                     <ActivityCard 
                         topText=""
@@ -55,11 +55,11 @@ import ActivityCard from "./ActivityCard.astro";
             </div>
             <div class="act__foot">
                 <div class="controls">
-                    <div class="controls__left hover_c" slt="act__slide"><div class="hover_c_ar"></div></div>
+                    <div {...{class:"controls__left hover_c", slt:"act__slide"}}><div class="hover_c_ar"></div></div>
                     <div class="controls__count">
-                        <div class="controls__count__in" slt="act__slide">-</div>
+                        <div {...{class:"controls__count__in", slt:"act__slide"}}>-</div>
                     </div>
-                    <div class="controls__right hover_c" slt="act__slide"><div class="hover_c_ar"></div></div>
+                    <div {...{class:"controls__right hover_c", slt:"act__slide"}}><div class="hover_c_ar"></div></div>
                 </div>
                 <a href="https://hoshinoresorts.com/en/activities" class="wide_button noar">
                     <div class="wide_button__bg"></div>

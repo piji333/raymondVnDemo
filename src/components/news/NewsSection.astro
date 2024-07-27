@@ -1,4 +1,5 @@
 ---
+import CustomHTMLAttributes from "../../types/customHTMLAttributes";
 import NewsCard from "./components/NewsCard.astro";
 ---
 
@@ -6,9 +7,9 @@ import NewsCard from "./components/NewsCard.astro";
   <div class="section__inner ons news__wrap">
     <div class="c_pad"></div>
     <div class="news">
-      <h2 class="ons_u" dly="500">Latest News</h2>
+      <h2 {...{class:"ons_u", dly:"500"}}>Latest News</h2>
       <div class="news__slide__area cardheight card_align">
-        <div class="news__slide slick-doubles" sln="news__slide">
+        <div {...{class:"news__slide slick-doubles", sln:"news__slide"} as CustomHTMLAttributes}>
           <NewsCard
             date="Tran Nhan Tong Academy Project"
             description="Dong Trieu Town People's Committee has signed a cooperation agreement with Hanoi National University, MyWay Ha Long Company and RayMond Vietnam Company in implementing projects to preserve and promote historical, cultural and religious values. and unique natural conditions in the town."
@@ -28,13 +29,13 @@ import NewsCard from "./components/NewsCard.astro";
       </div>
       <div class="news__foot">
         <div class="controls">
-          <div class="controls__left hover_c" slt="news__slide">
+          <div {...{class:"controls__left hover_c", slt:"news__slide"}as CustomHTMLAttributes}>
             <div class="hover_c_ar"></div>
           </div>
           <div class="controls__count">
-            <div class="controls__count__in" slt="news__slide">-</div>
+            <div {...{class:"controls__count__in", slt:"news__slide"}}>-</div>
           </div>
-          <div class="controls__right hover_c" slt="news__slide">
+          <div {...{class:"controls__right hover_c", slt:"news__slide"} as CustomHTMLAttributes}>
             <div class="hover_c_ar"></div>
           </div>
         </div>

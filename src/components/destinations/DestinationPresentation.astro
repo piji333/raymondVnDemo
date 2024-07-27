@@ -9,19 +9,19 @@ export interface Props {
 const { image1Url, image2Url, image3Url, destinationName } = Astro.props;
 ---
 
-<div class="destinations__slide__set" d_area={destinationName}>
-    <a href="hotels/">
+<div {...{class:"destinations__slide__set", d_area:destinationName}}>
+    <a href="https://www.raymondvn.com/projects/">
         <div
-            class="destinations__slide__img destinations__slide__img1"
-            b_style=`background-image: url('${image1Url}');`
+            {...{class:"destinations__slide__img destinations__slide__img1",
+            b_style:`background-image: url('${image1Url}');`}}
         ></div>
         <div
-            class="destinations__slide__img destinations__slide__img2"
-            b_style=`background-image: url('${image2Url}');`
+            {...{class:"destinations__slide__img destinations__slide__img2",
+            b_style:`background-image: url('${image2Url}');`}}
         ></div>
         <div
-            class="destinations__slide__img destinations__slide__img3"
-            b_style=`background-image: url('${image3Url}');`
+            {...{class:"destinations__slide__img destinations__slide__img3",
+            b_style:`background-image: url('${image3Url}');`}}
         ></div>
     </a>
 </div>
