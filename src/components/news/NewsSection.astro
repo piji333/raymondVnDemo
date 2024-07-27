@@ -1,0 +1,51 @@
+---
+import NewsCard from "./components/NewsCard.astro";
+---
+
+<div class="section">
+  <div class="section__inner ons news__wrap">
+    <div class="c_pad"></div>
+    <div class="news">
+      <h2 class="ons_u" dly="500">Latest News</h2>
+      <div class="news__slide__area cardheight card_align">
+        <div class="news__slide slick-doubles" sln="news__slide">
+          <NewsCard
+            date="Tran Nhan Tong Academy Project"
+            description="Dong Trieu Town People's Committee has signed a cooperation agreement with Hanoi National University, MyWay Ha Long Company and RayMond Vietnam Company in implementing projects to preserve and promote historical, cultural and religious values. and unique natural conditions in the town."
+            imageUrl="https://static.wixstatic.com/media/c46c87_e6ca8a7e1d254c63b21cb127c82d5e21~mv2.jpg/v1/fill/w_844,h_552,fp_0.56_0.48,q_85,usm_0.66_1.00_0.01,enc_auto/c46c87_e6ca8a7e1d254c63b21cb127c82d5e21~mv2.jpg"
+          />
+          <NewsCard
+            date="Phu Yen Fishing Port Project"
+            description="My Way Vietnam group and Raymond Architectural Design Office (Japan) on scheming and adjusting the major fishing ports and Phu Yen tuna bidding market."
+            imageUrl="https://static.wixstatic.com/media/c46c87_9ece5af413e449178efc88b325098623~mv2.jpg/v1/fill/w_605,h_393,fp_0.53_0.43,lg_1,q_80,enc_auto/c46c87_9ece5af413e449178efc88b325098623~mv2.jpg"
+          />
+          <NewsCard
+            date="TrungVan Complex Building"
+            description="Located on the Southwest suburban area of Hanoi, Trung Van Intracom Residential and Commercial Complex aims to blow a new wind through the old and deteriorated apartment blocks by offering a variety of high-end residential facilities including outdoor garden restaurants, a swimming pool, shopping centers and spacious apartments with rooftop gardens. The complex consists of two parts facing each other to form a central garden on the ground floor, one 25-storey residential block and one 5-storey commercial building featured by a rooftop pool and restaurant."
+            imageUrl="https://toquoc.mediacdn.vn/280518851207290880/2022/10/3/photo1664535617656-16645356177641210819669-1664784339647-1664784339980664648828.png"
+          />
+        </div>
+      </div>
+      <div class="news__foot">
+        <div class="controls">
+          <div class="controls__left hover_c" slt="news__slide">
+            <div class="hover_c_ar"></div>
+          </div>
+          <div class="controls__count">
+            <div class="controls__count__in" slt="news__slide">-</div>
+          </div>
+          <div class="controls__right hover_c" slt="news__slide">
+            <div class="hover_c_ar"></div>
+          </div>
+        </div>
+      </div>
+      <div class="news__foot news__foot2">
+        <a href="https://raymondsekkei.co.jp/news/" class="wide_button noar">
+          <div class="wide_button__bg"></div>
+          <div class="wide_button__in">For Full List</div>
+          <div class="wide_button__ar"></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+---
+export interface Props {
+  imageUrl: string;
+  topText: string;
+  mainText: string;
+  subText: string;
+}
+
+const { imageUrl, topText, mainText, subText } = Astro.props;
+---
+
+<div class="act__slide__box">
+    <div class="pos_rot">
+        <div class="pos_rot_in">
+            <div class="slide_navr" slt="act__slide"></div>
+            <div class="card ons cardtype_activities">
+                <a href="https://hoshinoresorts.com/en/activities/04/2024/124752/" class="card__all_a"></a>
+                <div class="card_in">
+                    <div class="card__head">
+                        <div class="card__head__photo__wrap">
+                            <div
+                                class="card__head__photo"
+                                 b_style=`background-image: url('${imageUrl}');`
+                            ></div>
+                        </div>
+                    </div>
+                    <div class="card__cont">
+                        <div class="card__cont__cont cf">
+                            <div class="card__cont__cont1">
+                                <div class="card__cont__logo">
+                                    <div class="brandlogo" style="background-image:url(images/logo02.png)"></div>
+                                </div>
+                            </div>
+                            <div class="card__cont__cont2">
+                                <div class="card__cont__place">{topText}</div>
+                                <div class="card__cont__title">{mainText}</div>
+                                <div class="card__cont__text"><span>{subText}</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__foot">
+                        <div class="card__foot__in"></div>
+                        <div class="card__foot__ar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

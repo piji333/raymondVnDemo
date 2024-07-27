@@ -1,0 +1,26 @@
+---
+import MySiteLayout from "../layouts/MySiteLayout.astro";
+import FrontVisual from "../components/frontVisual/FrontVisual.astro";
+import Awards from "../components/awards/awards/Awards.astro";
+import DestinationsSection from "../components/destinations/DestinationsSection.astro";
+import BrandsSection from "../components/brands/BrandsSection.astro";
+import ActivitiesSection from "../components/activities/ActivitiesSection.astro";
+import NewsSection from "../components/news/NewsSection.astro";
+import DesignPolicy from "../components/brands/DesignPolicy.astro";
+import CompanyPrinciple from "../components/brands/CompanyPrinciple.astro";
+
+export const partial = true;
+---
+
+<MySiteLayout>
+  <div class="wrapper">
+    <FrontVisual />
+	<Awards />
+	<DestinationsSection />
+	<BrandsSection />
+	<ActivitiesSection />
+	<DesignPolicy />
+	<NewsSection />
+	<CompanyPrinciple />
+  </div>
+</MySiteLayout>

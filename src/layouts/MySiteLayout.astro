@@ -1,0 +1,41 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+export interface Props extends HTMLAttributes<"html"> {
+  title?: string;
+}
+
+const { title = "Default Title", lang = "en", ...attributes } = Astro.props;
+export const partial = true;
+---
+
+<html lang={lang} {...attributes}>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="ja" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script is:inline src="/js/fontfaceobserver.js"></script>
+
+    <script is:inline src="/js/jquery/jquery-3.6.0.min.js"></script>
+
+    <script is:inline src="/js/slick.js"></script>
+
+    <script is:inline src="/js/jquery.mousewheel.min.js"></script>
+
+    <script is:inline src="/js/main.js"></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/css/slick.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link rel="stylesheet" href="/css/set.css" />
+  </head>
+
+  <body class="lang_en" id="toppage">
+    <slot />
+  </body>
+</html>

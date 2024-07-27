@@ -1,0 +1,72 @@
+---
+import ActivityCard from "./ActivityCard.astro";
+---
+
+<div class="section">
+    <div class="section__inner ons act_wrap">
+        <div class="c_pad"></div>
+        <div class="act">
+            <div class="act__texts">
+                <div class="act__texts__in">
+                    <h2 class="ons_u" dly="500">Services We Offer</h2>
+                    <div class="act__texts__line ons_hol sp" dly="500"></div>
+                    <p>
+                        <!-- Enchanting activities await you at every <br /> -->
+                        Innovative solutions await at every <br />
+                        <!-- destination. Each is designed to immerse you in <br /> -->
+                        design. Each is crafted through thoughtful <br />
+                        <!-- regional culture through interactivity, sensory <br /> -->
+                        planning, aesthetic excellence, and   <br />
+                        <!-- delight, and a sense of play. -->
+                        functional ingenuity.
+                    </p>
+                </div>
+            </div>
+            <div class="act__slide__area cardheight">
+                <div class="act__slide__newnav act__slide__newnav_1"></div>
+                <div class="act__slide__newnav act__slide__newnav_2"></div>
+                <div class="act__slide" sln="act__slide">
+
+                    <ActivityCard 
+                        topText=""
+                        mainText="Urban Design and Planning"
+                        subText=""
+                        imageUrl="images/starLakeOnsen.jpeg"
+                    />
+                    <ActivityCard 
+                        topText=""
+                        mainText="Architectural Design"
+                        subText=""
+                        imageUrl="https://static.wixstatic.com/media/c46c87_6e325275ce3b4c2684bade74c16ae95d~mv2.jpg/v1/fill/w_560,h_418,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Minh%20An%20View%201.jpg"
+                    />
+                    <ActivityCard 
+                        topText=""
+                        mainText="Interior Design"
+                        subText=""
+                        imageUrl="/images/saikoSushi.jpeg"
+                    />
+                    <ActivityCard 
+                        topText=""
+                        mainText="Landscape Design"
+                        subText=""
+                        imageUrl="https://static.wixstatic.com/media/c46c87_b4fa4a8ba5604877976de486b4a4599d~mv2.png/v1/fill/w_974,h_724,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/ThongDongGarden4.png"
+                    />
+                </div>
+            </div>
+            <div class="act__foot">
+                <div class="controls">
+                    <div class="controls__left hover_c" slt="act__slide"><div class="hover_c_ar"></div></div>
+                    <div class="controls__count">
+                        <div class="controls__count__in" slt="act__slide">-</div>
+                    </div>
+                    <div class="controls__right hover_c" slt="act__slide"><div class="hover_c_ar"></div></div>
+                </div>
+                <a href="https://hoshinoresorts.com/en/activities" class="wide_button noar">
+                    <div class="wide_button__bg"></div>
+                    <div class="wide_button__in">Explore More</div>
+                    <div class="wide_button__ar"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

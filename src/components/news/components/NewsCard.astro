@@ -1,0 +1,41 @@
+---
+export interface Props {
+  imageUrl: string;
+  date: string;
+  description: string;
+}
+
+const { imageUrl, date, description } = Astro.props;
+---
+
+<div class="act__slide__box">
+    <div class="slide_navr" slt="act__slide"></div>
+
+    <div class="card ons cardtype_post">
+        <a href="/" class="card__all_a"></a>
+        <div class="card_in">
+            <div class="card__head">
+                <div class="card__head__photo__wrap">
+                    <div class="card__head__photo" b_style=`background-image: url('${imageUrl}');` ></div>
+                </div>
+            </div>
+            <div class="card__cont">
+                <div class="card__cont__cont cf">
+                    <div class="card__cont__cont1">
+                        <div class="card__cont__logo">
+                            <div class="brandlogo" style="background-image:url(images/logo02.png)"></div>
+                        </div>
+                    </div>
+                    <div class="card__cont__cont2">
+                        <div class="card__cont__date">{date}</div>
+                        <div class="card__cont__title card__cont__title_4">{description}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card__foot">
+                <div class="card__foot__in"></div>
+                <div class="card__foot__ar"></div>
+            </div>
+        </div>
+    </div>
+</div>
