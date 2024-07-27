@@ -1089,7 +1089,7 @@ function p_wide_button() {
 
 
 function def() {
-    //    $('[href="/"]').attr("href", $('.header__logo').attr("href"));
+    //    $('[href=""]').attr("href", $('.header__logo').attr("href"));
 
 
 
