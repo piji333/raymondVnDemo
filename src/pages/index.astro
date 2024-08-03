@@ -8,19 +8,100 @@ import ActivitiesSection from "../components/activities/ActivitiesSection.astro"
 import NewsSection from "../components/news/NewsSection.astro";
 import DesignPolicy from "../components/brands/DesignPolicy.astro";
 import CompanyPrinciple from "../components/brands/CompanyPrinciple.astro";
+import Footer from "../components/footer/Footer.astro";
 
 export const partial = true;
 ---
 
 <MySiteLayout>
+
+  <!-- <style define:vars={{ primaryBackgroundColor: COLORS.PRIMARY_BACKGROUND }}>
+    :root {
+      --color-primary-background: var(--primaryBackgroundColor);
+    }
+  </style> -->
+
+  <div class="menu_button">
+    <div
+      class="menu_button__in hover_c ab_fit topload topload__pc__7 topload__sp__3"
+    >
+      <div class="menu_button__1 menu_button__line"></div>
+      <div class="menu_button__2 menu_button__line"></div>
+      <div class="menu_button__3 menu_button__line"></div>
+    </div>
+  </div>
+  <div class="header">
+    <a href="#top" class="header__logo hover_o7">
+      <!-- <img
+        src="https://hoshinoresorts.com/wpadmin2022/wp-content/uploads/2022/08/483b205ed9c25c13c31d18387ad03bfb-1200x120.png"
+        alt="Raymond"
+        class="ab_fit topload topload__pc__1 topload__sp__1"
+      /> -->
+	  <img src="images/logo03.png" alt="Raymond"
+	  class="ab_fit topload topload__pc__1 topload__sp__1" 
+	  />
+	  <!-- <img src="https://static.wixstatic.com/media/c46c87_75ea76fef2cf42438cb6692b1dd80159~mv2.png/v1/fill/w_368,h_98,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/c46c87_75ea76fef2cf42438cb6692b1dd80159~mv2.png" alt="Raymond"
+	  class="ab_fit topload topload__pc__1 topload__sp__1" 
+	  /> -->
+    </a>
+    
+  </div>
+  <div class="mainmenu">
+    <div class="mainmenu__cont">
+      <div class="mainmenu__cont1">
+        <div><a href="#awards">Awards</a></div>
+        <div>
+          <a href="#projects">Projects</a>
+        </div>
+        <div><a href="#services">Services</a></div>
+        <div><a href="#news">News</a></div>
+      </div>
+      <div class="mainmenu__cont2">
+        <div class="mainmenu__sns">
+          <a
+            href="https://www.facebook.com/RaymondSekkei/"
+            class="hover_c"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://hoshinoresorts.com/wpadmin2022/wp-content/uploads/2022/07/216879d1e5c669be74801ff5e69b85f6.svg"
+              class="ab_fit"
+              alt="facebook"
+            />
+          </a>
+          <!-- <a
+            href="https://www.facebook.com/RaymondSekkei/"
+            class="hover_c"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://hoshinoresorts.com/wpadmin2022/wp-content/uploads/2022/07/4ee1baa226ac738c2bca8ce82a0ce3e1.svg"
+              class="ab_fit"
+              alt="instagram"
+            />
+          </a> -->
+        </div>
+        <!-- <a
+          href="https://hoshinoresorts.com/en/contact"
+          class="mainmenu__cont2_3"
+        >
+        </a> -->
+      </div>
+    </div>
+  </div>
+  <div class="headpad"></div>
+
   <div class="wrapper">
     <FrontVisual />
-	<Awards />
-	<DestinationsSection />
-	<BrandsSection />
-	<ActivitiesSection />
-	<DesignPolicy />
-	<NewsSection />
-	<CompanyPrinciple />
+    <Awards />
+    <DestinationsSection />
+    <BrandsSection />
+    <ActivitiesSection />
+    <DesignPolicy />
+    <NewsSection />
+    <CompanyPrinciple />
   </div>
+  <Footer />
 </MySiteLayout>

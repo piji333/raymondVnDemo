@@ -23,7 +23,7 @@ ajax_p = { pd: 1 };
 
 
 
-const futuraObserver = new FontFaceObserver('futura-pt');
+const futuraObserver = new FontFaceObserver('FuturaCyrillicBook');
 Promise.all([
     futuraObserver.load()
 ]).then(function() {
@@ -399,6 +399,12 @@ $(function($) {
     $(document).on('click', '.menu_button', function() {
         $("body").toggleClass("mainmenu_open");
     });
+
+    // click handler for links inside mainmenu__cont
+    $('.mainmenu__cont a').on('click', function(e) {
+        $("body").toggleClass("mainmenu_open");
+    });
+
     $(document).on('click', '.footer__brands__head', function() {
         $(this).parent().toggleClass("maxopen");
     });
