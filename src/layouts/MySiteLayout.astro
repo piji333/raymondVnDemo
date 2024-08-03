@@ -3,13 +3,14 @@ import type { HTMLAttributes } from "astro/types";
 
 export interface Props extends HTMLAttributes<"html"> {
   title?: string;
+  thislng?: string;
 }
 
 const { title = "Default Title", lang = "en", ...attributes } = Astro.props;
 export const partial = true;
 ---
 
-<html lang={lang} {...attributes}>
+<html thislng="en" lang={lang} {...attributes}>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="Content-Language" content="ja" />
@@ -25,7 +26,8 @@ export const partial = true;
     <script is:inline src="js/jquery.mousewheel.min.js"></script>
 
     <script is:inline src="js/main.js"></script>
-
+    
+    <link rel="stylesheet" href="css/jfn3mcb.css" />
     <link
       rel="stylesheet"
       type="text/css"

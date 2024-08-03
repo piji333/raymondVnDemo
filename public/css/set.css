@@ -1,14 +1,6 @@
 
 @charset "UTF-8";
 
-@font-face {
-  font-family: 'FuturaCyrillicBook';
-  src: local('FuturaCyrillicBook'), url('fonts/FuturaCyrillicBook.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
   --color-primary-background: #1f1f1f;
 }
@@ -425,7 +417,7 @@ html:not([thislng=kr]) [forlng=kr] {
 }
 
 [thislng=en] {
-  font-family: 'FuturaCyrillicBook', sans-serif;
+  font-family: 'futura-pt', sans-serif;
   font-weight: 500;
 }
 
@@ -2611,9 +2603,9 @@ textarea {
 @media screen and (max-width: 768px) {
   .header__logo {
     width: 112px;
-    height: 11.2px;
     width: 140px;
-    height: 14px;
+    /* height: 14px; */
+    height: 28px;
     left: 15px;
   }
   [thislng=ch] .header__logo, [thislng=zh] .header__logo {

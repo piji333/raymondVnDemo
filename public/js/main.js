@@ -23,7 +23,7 @@ ajax_p = { pd: 1 };
 
 
 
-const futuraObserver = new FontFaceObserver('FuturaCyrillicBook');
+const futuraObserver = new FontFaceObserver('futura-pt');
 Promise.all([
     futuraObserver.load()
 ]).then(function() {
