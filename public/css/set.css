@@ -2806,9 +2806,14 @@ textarea {
   left: 387px;
   padding-top: 2px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   .header__menu {
     display: none;
+  }
+}
+@media screen and (max-width: 950px) {
+  .header__menu {
+    left: 270px;
   }
 }
 .header__menu a {

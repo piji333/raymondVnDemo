@@ -9,12 +9,12 @@ import NewsSection from "../components/news/NewsSection.astro";
 import DesignPolicy from "../components/brands/DesignPolicy.astro";
 import CompanyPrinciple from "../components/brands/CompanyPrinciple.astro";
 import Footer from "../components/footer/Footer.astro";
+import CompanyProfile from "../components/companyProfile/components/companyProfile/CompanyProfile.astro";
 
 export const partial = true;
 ---
 
 <MySiteLayout>
-
   <!-- <style define:vars={{ primaryBackgroundColor: COLORS.PRIMARY_BACKGROUND }}>
     :root {
       --color-primary-background: var(--primaryBackgroundColor);
@@ -37,14 +37,42 @@ export const partial = true;
         alt="Raymond"
         class="ab_fit topload topload__pc__1 topload__sp__1"
       /> -->
-	  <img src="images/logo03.png" alt="Raymond"
-	  class="ab_fit topload topload__pc__1 topload__sp__1" 
-	  />
-	  <!-- <img src="https://static.wixstatic.com/media/c46c87_75ea76fef2cf42438cb6692b1dd80159~mv2.png/v1/fill/w_368,h_98,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/c46c87_75ea76fef2cf42438cb6692b1dd80159~mv2.png" alt="Raymond"
+      <img
+        src="images/logo03.png"
+        alt="Raymond"
+        class="ab_fit topload topload__pc__1 topload__sp__1"
+      />
+      <!-- <img src="https://static.wixstatic.com/media/c46c87_75ea76fef2cf42438cb6692b1dd80159~mv2.png/v1/fill/w_368,h_98,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/c46c87_75ea76fef2cf42438cb6692b1dd80159~mv2.png" alt="Raymond"
 	  class="ab_fit topload topload__pc__1 topload__sp__1" 
 	  /> -->
     </a>
-    
+
+    <div class="header__menu pc">
+      <a href="#company-profile"
+        ><span class="topload topload__pc__2">Profile</span></a
+      >
+      <a href="#awards"
+        ><span class="topload topload__pc__3">Awards</span></a
+      >
+      <a href="#services"
+        ><span class="topload topload__pc__3">Services</span></a
+      >
+      <a href="#contact"
+        ><span class="topload topload__pc__3">Contact</span></a
+      >
+      <!-- <a href="https://hoshinoresorts.com/en/activities"
+        ><span class="topload topload__pc__4">Architecture</span></a
+      >
+      <a href="https://hoshinoresorts.com/en/activities"
+        ><span class="topload topload__pc__4">Planning</span></a
+      >
+      <a href="https://hoshinoresorts.com/en/activities"
+        ><span class="topload topload__pc__4">Landscape</span></a
+      >
+      <a href="https://hoshinoresorts.com/en/activities"
+        ><span class="topload topload__pc__4">Interior</span></a
+      > -->
+    </div>
   </div>
   <div class="mainmenu">
     <div class="mainmenu__cont">
@@ -55,6 +83,9 @@ export const partial = true;
         </div>
         <div><a href="#services">Services</a></div>
         <div><a href="#news">News</a></div>
+        <div><a href="#company-principle">Our Principle</a></div>
+        <div><a href="#company-profile">Company Profile</a></div>
+        <div><a href="#founder">The Founder History</a></div>
       </div>
       <div class="mainmenu__cont2">
         <div class="mainmenu__sns">
@@ -99,9 +130,10 @@ export const partial = true;
     <DestinationsSection />
     <BrandsSection />
     <ActivitiesSection />
-    <DesignPolicy />
     <NewsSection />
-    <CompanyPrinciple />
+    <!-- <DesignPolicy /> -->
+    <!-- <CompanyPrinciple /> -->
+    <CompanyProfile />
   </div>
 
   <Footer />
