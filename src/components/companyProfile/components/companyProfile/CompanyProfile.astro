@@ -1,11 +1,8 @@
 ---
-import { COLORS } from "../../../../constants/colors";
-
 ---
 <main style={{
-    // backgroundColor: COLORS.WHITE,
     paddingTop: 70,
-    }} class="main english" id="main">
+    }} class="main english" id="company-profile-main">
     <div class="inner">
         <section class="title01">
             <h1><span class="font-en">About Raymond Architectural Design Office</span></h1>
@@ -32,7 +29,7 @@ import { COLORS } from "../../../../constants/colors";
             </section>
             <section id="company-profile" class="section profile">
                 <h2 class="title01">Company Profile</h2>
-                <table width="1139" height="612">
+                <table width="1139" height="612" {...{width:"1139", height:"612"}}>
                     <tbody>
                         <tr>
                             <th>Company Name</th>
@@ -226,3 +223,7 @@ import { COLORS } from "../../../../constants/colors";
         </article>
     </div>
 </main>
+
+<!-- <style>
+    @import './companyProfile.css';
+</style> -->
