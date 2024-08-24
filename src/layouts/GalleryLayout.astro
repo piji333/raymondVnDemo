@@ -1,0 +1,37 @@
+---
+import MySiteLayout from "./MySiteLayout.astro";
+const { title, subtitle } = Astro.props;
+---
+
+<MySiteLayout>
+  <div id="sdgs_page">
+    <div class="popup">
+      <div class="popup__bg"></div>
+      <div class="popup__box">
+        <div class="popup__box__close"></div>
+        <div class="popup__box__scroll">
+          <div class="popup__box__scroll__bar"></div>
+        </div>
+        <div class="popup__box__content">
+          <div class="popup__box__content__in"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sdgs">
+      <h2 class="h272 sdgs_h272">{title}</h2>
+      <div class="sdgs__line"></div>
+      <div class="sdgs__lead">{subtitle}</div>
+
+      <div class="sdgs__list">
+        <slot />
+      </div>
+
+      <div class="sdgs__load sp">
+        <div class="sdgs__load__button">
+          <div class="sdgs__load__button__in">Load More</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</MySiteLayout>
