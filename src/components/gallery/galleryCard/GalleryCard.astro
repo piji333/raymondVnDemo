@@ -1,9 +1,9 @@
 ---
-const { cardImageUrl, cardTitle, cardDescription, popupTitle, popupImageUrl, popupDescription } = Astro.props;
+const { cardImageUrl, cardTitle, cardDescription, popupTitle, popupImageUrl, popupDescription, isToLoad } = Astro.props;
 ---
 
-<div class="popup__opener sdgs__list__box common_more__hover">
-  <div class="popup__set">
+<div class=`popup__opener sdgs__list__box common_more__hover ${isToLoad && "sdgs__list__box__toload"}`>
+  <textarea class="popup__set">
     <div class="popup_sdgs">
       <div class="popup_sdgs__title">
         {popupTitle}
@@ -16,9 +16,8 @@ const { cardImageUrl, cardTitle, cardDescription, popupTitle, popupImageUrl, pop
 
       <div class="popup_sdgs__text">
         {popupDescription}
-      </div>
-    </div>
-  </div>
+      
+  </textarea>
 
   <div class="sdgs__list__box__photo">
     <div
