@@ -1,32 +1,3 @@
 {
-  // "extends": "astro/tsconfigs/strict"
-  // "strict": false,
-  // // Other options...
-  // "noImplicitAny": false,
-  // "strictNullChecks": false,
-  // "strictFunctionTypes": false,
-  // "strictBindCallApply": false,
-  // "strictPropertyInitialization": false,
-  // "noImplicitThis": false,
-  // "useUnknownInCatchVariables": false,
-  // "alwaysStrict": false
-  "compilerOptions": {
-    "noEmitOnError": false, // Allow emitting even if there are errors
-    "skipLibCheck": true, // Skip type checking of declaration files
-    "suppressImplicitAnyIndexErrors": true, // Suppress errors for indexing objects with implicit 'any' type
-    "strict": false, // Disable all strict type-checking options
-    "noImplicitAny": false, // Allow variables to have an implicit 'any' type
-    "noImplicitThis": false, // Allow 'this' to have an implicit 'any' type
-    "alwaysStrict": false, // Disable strict mode for JavaScript files
-    "strictNullChecks": false, // Disable strict null checks
-    "strictFunctionTypes": false, // Disable strict checking of function types
-    "strictPropertyInitialization": false, // Disable strict checking of property initialization in classes
-    "noUnusedLocals": false, // Allow unused local variables
-    "noUnusedParameters": false, // Allow unused function parameters
-    "noImplicitReturns": false, // Allow functions to not have explicit return types
-    "noFallthroughCasesInSwitch": false // Allow fallthrough cases in switch statements
-  },
-  "exclude": [
-    "src/components/gallery/galleryCard/GalleryCard.astro"
-  ]
+  "extends": "astro/tsconfigs/base"
 }

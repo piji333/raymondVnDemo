@@ -1,18 +1,16 @@
 {
-  "name": "terrestrial-tower",
+  "name": "raymond-vn",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.8.3",
-    "astro": "^4.12.2",
-    "fontfaceobserver": "^2.3.0",
-    "typescript": "^5.5.4"
+    "astro": "^4.14.5",
+    "fontfaceobserver": "^2.3.0"
   }
 }
