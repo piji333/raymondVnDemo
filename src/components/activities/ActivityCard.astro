@@ -4,9 +4,10 @@ export interface Props {
   topText: string;
   mainText: string;
   subText: string;
+  href: string;
 }
 
-const { imageUrl, topText, mainText, subText } = Astro.props;
+const { imageUrl, topText, mainText, subText, href } = Astro.props;
 ---
 
 <div class="act__slide__box">
@@ -14,7 +15,7 @@ const { imageUrl, topText, mainText, subText } = Astro.props;
         <div class="pos_rot_in">
             <div {...{class:"slide_navr", slt:"act__slide"}}></div>
             <div class="card ons cardtype_activities">
-                <a href="/" class="card__all_a"></a>
+                <a href={href} class="card__all_a"></a>
                 <div class="card_in">
                     <div class="card__head">
                         <div class="card__head__photo__wrap">
