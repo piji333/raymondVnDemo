@@ -1,23 +1,21 @@
 ---
-const { cardImageUrl, cardTitle, cardDescription, popupTitle, popupImageUrl, popupDescription, isToLoad } = Astro.props;
+import './style.css';
+import TextAreaComponent from './TextAreaComponent.astro';
+
+const { cardImageUrl, cardTitle, cardDescription, popupTitle, popupImageUrl, popupDescription, galleryImages, isToLoad } = Astro.props;
 ---
 
 <div class=`popup__opener sdgs__list__box common_more__hover ${isToLoad && "sdgs__list__box__toload"}`>
-  <textarea class="popup__set">
-    <div class="popup_sdgs">
-      <div class="popup_sdgs__title">
-        {popupTitle}
-      </div>
+  
 
-      <img
-        src={popupImageUrl}
-        class="popup_sdgs__img"
-      />
+  <TextAreaComponent
+  
+    popupTitle={popupTitle}
+    popupImageUrl={popupImageUrl}
+    popupDescription={popupDescription}
+    galleryImages={galleryImages}
+  />
 
-      <div class="popup_sdgs__text">
-        {popupDescription}
-      
-  </textarea>
 
   <div class="sdgs__list__box__photo">
     <div
@@ -42,4 +40,5 @@ const { cardImageUrl, cardTitle, cardDescription, popupTitle, popupImageUrl, pop
       <div class="common_more__ar"></div>
     </div>
   </div>
+
 </div>

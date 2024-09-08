@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700,900&subset=japanese");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+JP:200,300,400,500,600,700,900");
+@import url("https://use.typekit.net/tpv6hrb.css");
+body,
+div,
+ul,
+li,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+img {
+  border: 0;
+}
+img {
+  vertical-align: middle;
+}
+li {
+  list-style: none;
+}
+
+
+@charset "utf-8";
+.font-en {
+  font-family: futura-pt, "Century Gothic", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@media screen and (max-width: 767px) {
+  a:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+}
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+#main {
+  /* padding-top: 180px; */
+  padding-top: 30px;
+}
+@media screen and (max-width: 767px) {
+  #main {
+    /* padding-top: 130px; */
+  }
+}
+.inner {
+  max-width: 1000px;
+  /* margin: 0 auto; */
+  margin: 0;
+  /* padding: 0 30px; */
+  padding: 0;
+}
+@media all and (-ms-high-contrast: none) {
+  .inner {
+    margin-top: 120px;
+  }
+}
+
+
+@charset "utf-8";
+.works_cat_post .inner {
+  max-width: 880px;
+}
+.gallery {
+  margin-bottom: 60px;
+}
+.gallery h2.font-en {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.gallery_area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.gallery_area:before {
+  content: "";
+  display: block;
+  width: 21.6%;
+  order: 1;
+}
+.gallery_area:after {
+  content: "";
+  display: block;
+  width: 21.6%;
+}
+.gallery_area li {
+  margin-bottom: 25px;
+}
+.gallery_area .gallery_detail {
+  width: 178px;
+  height: 178px;
+  overflow: hidden;
+  position: relative;
+}
+.gallery_area .gallery_detail img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: auto;
+  max-width: initial;
+  height: 100%;
+}
+@media screen and (max-width: 767px) {
+  .gallery_area {
+    justify-content: space-between;
+  }
+  .gallery_area li {
+    width: 48%;
+    margin: 0 3% 25px 0;
+  }
+  .gallery_area li:nth-child(2n) {
+    margin: 0 0 25px;
+  }
+  .gallery_area .gallery_detail {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+.lb-loader,.lightbox{text-align:center;line-height:0;position:absolute;left:0}
+body.lb-disable-scrolling{overflow:hidden;}
+.lightboxOverlay{position:absolute;top:0;left:0;z-index:9999;background-color:#000;filter:alpha(Opacity=80);opacity:.8;display:none}
+.lightbox{width:100%;z-index:10000;font-weight:400;outline:0}
+.lightbox .lb-image{display:block;height:auto;max-width:inherit;max-height:none;border-radius:3px;border:4px solid #fff}
+.lightbox a img{border:none}
+.lb-outerContainer{position:relative;width:250px;height:250px;margin:0 auto;border-radius:4px;background-color:#fff}
+.lb-outerContainer:after{content:"";display:table;clear:both}
+.lb-loader{top:43%;height:25%;width:100%}
+/*.lb-cancel{display:block;width:32px;height:32px;margin:0 auto;background:url(//raymondsekkei.co.jp/wp/wp-content/themes/raymond/css/../images/loading.gif) no-repeat}*/
+.lb-nav{position:absolute;top:0;left:0;height:100%;width:100%;z-index:10}
+.lb-container>.nav{left:0}
+.lb-nav a{outline:0;background-image:url(data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)}
+.lb-next,.lb-prev{height:100%;cursor:pointer;display:block}
+.lb-nav a.lb-prev{position: absolute;width:34%;left:-60px;float:left;background:url(//raymondsekkei.co.jp/wp/wp-content/themes/raymond/css/../img/common/prev.png) left 48% no-repeat;filter:alpha(Opacity=0);opacity:1;-webkit-transition:opacity .6s;-moz-transition:opacity .6s;-o-transition:opacity .6s;transition:opacity .6s}
+.lb-nav a.lb-prev:hover{filter:alpha(Opacity=100);opacity:1}
+.lb-nav a.lb-next{position: absolute;width:64%;right:-60px;float:right;background:url(//raymondsekkei.co.jp/wp/wp-content/themes/raymond/css/../img/common/next.png) right 48% no-repeat;filter:alpha(Opacity=0);opacity:1;-webkit-transition:opacity .6s;-moz-transition:opacity .6s;-o-transition:opacity .6s;transition:opacity .6s}
+.lb-nav a.lb-next:hover{filter:alpha(Opacity=100);opacity:1}
+.lb-dataContainer{margin:0 auto;padding-top:8px;width:100%;border-bottom-left-radius:4px;border-bottom-right-radius:4px}
+.lb-dataContainer:after{content:"";display:table;clear:both}
+.lb-data{padding:0 4px;color:#ccc}
+.lb-data .lb-details{width:85%;float:left;text-align:left;line-height:1.1em}
+.lb-data .lb-caption{font-size:13px;font-weight:700;line-height:1em}
+.lb-data .lb-caption a{color:#4ae}
+.lb-data .lb-number{display:block;clear:left;padding-bottom:1em;font-size:12px;color:#999}
+.lb-data .lb-close{display:block;float:right;width:30px;height:30px;background:url(//raymondsekkei.co.jp/wp/wp-content/themes/raymond/css/../img/common/close.png) top right no-repeat;text-align:right;outline:0;filter:alpha(Opacity=70);opacity:.7;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s}
+.lb-data .lb-close:hover{cursor:pointer;filter:alpha(Opacity=100);opacity:1}
+@media screen and (max-width: 767px) {
+.lightboxOverlay {
+	width: 100%!important;
+}
+.lb-outerContainer {
+    width: 80%!important;
+    height: auto!important;
+}
+.lightbox .lb-image {
+    width: 100%!important;
+    height: auto!important;
+}
+.lb-nav a.lb-next {
+    position: static;
+	background: url(//raymondsekkei.co.jp/wp/wp-content/themes/raymond/css/none); 
+}
+.lb-nav a.lb-prev{
+    position: static;
+	background: url(//raymondsekkei.co.jp/wp/wp-content/themes/raymond/css/none); 
+}
+}
