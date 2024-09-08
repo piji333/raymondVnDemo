@@ -9,7 +9,7 @@ import GalleryLayout from "../../layouts/GalleryLayout.astro";
     popupImageUrl="/images/kawaraMyAn/kawaraMyAnInterior1.jpg"
     cardTitle="KAWARA MY AN ONSEN RESORT | HUE | 2016"
     popupTitle="KAWARA MY AN ONSEN RESORT | HUE | 2016"
-    cardDescription="An international standard complex resort with a scale including an onsen area, a hotel, a villa and many other facilities"
+    cardDescription="An international standard complex resort in Hue city"
     popupDescription=`
         Function: Onsen, hotel, sauna, mudbath, villa, water surface landscape
         <br>
@@ -25,13 +25,25 @@ import GalleryLayout from "../../layouts/GalleryLayout.astro";
         `
     galleryImages = {[
       {
+          imageUrl: Astro.site + "/images/kawaraMyAn/kawaraMyAnInterior2.jpg",
+          thumbUrl: Astro.site + "/images/kawaraMyAn/kawaraMyAnInterior2-175x175.jpg",
+      },
+      {
           imageUrl: Astro.site + "/images/kawaraMyAn/kawaraMyAnInterior1.jpg",
           thumbUrl: Astro.site + "/images/kawaraMyAn/kawaraMyAnInterior1-175x175.jpg",
       },
       {
-          imageUrl: Astro.site + "/images/kawaraMyAn/kawaraMyAnInterior2.jpg",
-          thumbUrl: Astro.site + "/images/kawaraMyAn/kawaraMyAnInterior2-175x175.jpg",
-      }
+          imageUrl: import.meta.env.BASE_URL + "/images/kawaraMyAn/kawaraMyAnInterior4.jpeg",
+          thumbUrl: import.meta.env.BASE_URL + "/images/kawaraMyAn/kawaraMyAnInterior4-175x175.jpeg",
+      },
+      {
+          imageUrl: import.meta.env.BASE_URL + "/images/kawaraMyAn/kawaraMyAnInterior5.jpeg",
+          thumbUrl: import.meta.env.BASE_URL + "/images/kawaraMyAn/kawaraMyAnInterior5-175x175.jpeg",
+      },
+      {
+          imageUrl: import.meta.env.BASE_URL + "/images/kawaraMyAn/kawaraMyAnInterior3.jpg",
+          thumbUrl: import.meta.env.BASE_URL + "/images/kawaraMyAn/kawaraMyAnInterior3-175x175.jpg",
+      },
   ]}
   />
   <GalleryCard
