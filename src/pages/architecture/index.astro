@@ -1,15 +1,16 @@
 ---
 import GalleryCard from "../../components/gallery/galleryCard/GalleryCard.astro";
 import GalleryLayout from "../../layouts/GalleryLayout.astro";
+const baseUrl = import.meta.env.DEV_BASE_URL || import.meta.env.BASE_URL;
 ---
 
 <GalleryLayout title="Typical Projects" subtitle="Architecture">
   <GalleryCard
-    cardImageUrl=`${import.meta.env.BASE_URL}/images/kawara1.jpeg`
+    cardImageUrl=`${baseUrl}/images/kawara1.jpeg`
     cardTitle="KAWARA MY AN ONSEN RESORT | HUE | 2016"
     cardDescription="International standard complex resort in Hue"
     popupTitle="KAWARA MY AN ONSEN RESORT | HUE | 2016"
-    popupImageUrl=`${import.meta.env.BASE_URL}/images/kawara1.jpeg`
+    popupImageUrl=`${baseUrl}/images/kawara1.jpeg`
     popupDescription=`
         Function: Onsen, Restaurant, Sauna, Spa, Water landscape<br>
         Location: Hue, Viet Nam<br>
@@ -19,11 +20,11 @@ import GalleryLayout from "../../layouts/GalleryLayout.astro";
         Kawara My An Onsen Resort is an international standard complex resort with a scale including an onsen area, a hotel, a villa, a restaurant, a spa, an entertainment area and many other facilities. In particular, the hot spring bath area is built and operated according to the special standards of traditional Japanese Onsen.`
   />
   <GalleryCard
-    cardImageUrl=`${import.meta.env.BASE_URL}/images/mikazukiResort.jpg`
+    cardImageUrl=`${baseUrl}/images/mikazukiResort.jpg`
     cardTitle="MIKAZUKI JAPANESE SPA and RESORT | DA NANG | 2017"
     cardDescription="One of Raymond's key projects in the central region of Vietnam"
     popupTitle="MIKAZUKI JAPANESE SPA and RESORT | DA NANG | 2017"
-    popupImageUrl=`${import.meta.env.BASE_URL}/images/mikazukiResort.jpg`
+    popupImageUrl=`${baseUrl}/images/mikazukiResort.jpg`
     popupDescription=`
         Function: Restaurant, Spa, Onsen, Landscape, Waterpark, Hotel, Villa<br>
         Location: Da Nang, Viet Nam<br>
@@ -33,8 +34,8 @@ import GalleryLayout from "../../layouts/GalleryLayout.astro";
         Mikazuki Hotel and Resort Complex in Xuan Thieu, Da Nang is one of Raymond's key projects in the central region of Vietnam. Created endowed with a charming blue sea, Raymond's design has taken full advantage of 100% of the view advantage for all hotel rooms. With the idea of where heaven and earth converge, where the rhythm of life begins, the resort is designed and built based on 4 main factors: Sun, Moon, Waves and Sea. Bringing people to experience an exciting journey of discovery with Japanese standard values, spreading the cultural quintessence of Phu Tang in Vietnam.`
   />
   <GalleryCard
-    cardImageUrl=`${import.meta.env.BASE_URL}/images/hiyori.jpeg`
-    popupImageUrl=`${import.meta.env.BASE_URL}/images/hiyori.jpeg`
+    cardImageUrl=`${baseUrl}/images/hiyori.jpeg`
+    popupImageUrl=`${baseUrl}/images/hiyori.jpeg`
     cardTitle="HIYORI | DA NANG | 2019"
     popupTitle="HIYORI | DA NANG | 2019"
     cardDescription="Built from the desire to create a space where residents can enjoy a light, relaxed and comfortable life"
@@ -46,8 +47,8 @@ import GalleryLayout from "../../layouts/GalleryLayout.astro";
         Built from the desire to create a space where residents can enjoy a light, relaxed and comfortable life. Besides, the architectural design maximizes the space, the entire living room and bedroom get natural light, helping each apartment to be filled with light and ventilation.`
   />
   <GalleryCard
-    cardImageUrl=`${import.meta.env.BASE_URL}/images/LANDMARK_DANANG_2.jpeg`
-    popupImageUrl=`${import.meta.env.BASE_URL}/images/LANDMARK_DANANG_2.jpeg`
+    cardImageUrl=`${baseUrl}/images/LANDMARK_DANANG_2.jpeg`
+    popupImageUrl=`${baseUrl}/images/LANDMARK_DANANG_2.jpeg`
     cardTitle="LANDMARK DANANG"
     popupTitle="LANDMARK DANANG"
     cardDescription="A project with an investor from Japan, including a complex of commercial centers and high-class apartment"
@@ -64,8 +65,8 @@ import GalleryLayout from "../../layouts/GalleryLayout.astro";
         `
   />
   <GalleryCard
-    cardImageUrl=`${import.meta.env.BASE_URL}/images/oso.jpg`
-    popupImageUrl=`${import.meta.env.BASE_URL}/images/oso.jpg`
+    cardImageUrl=`${baseUrl}/images/oso.jpg`
+    popupImageUrl=`${baseUrl}/images/oso.jpg`
     cardTitle="OSO BUILDING | DA NANG | 2020"
     popupTitle="OSO BUILDING | DA NANG | 2020"
     cardDescription="A complex of commercial services, restaurants, medical centers, international medical standards of 4 stars"
@@ -86,8 +87,8 @@ import GalleryLayout from "../../layouts/GalleryLayout.astro";
         `
   />
   <GalleryCard
-    cardImageUrl=`${import.meta.env.BASE_URL}/images/dongTacFishingPort.jpg`
-    popupImageUrl=`${import.meta.env.BASE_URL}/images/dongTacFishingPort.jpg`
+    cardImageUrl=`${baseUrl}/images/dongTacFishingPort.jpg`
+    popupImageUrl=`${baseUrl}/images/dongTacFishingPort.jpg`
     cardTitle="DONG TAC FISHING PORT | PHU YEN | 2020"
     popupTitle="DONG TAC FISHING PORT | PHU YEN | 2020"
     cardDescription="5-storey Seafood Trade Center with modern architecture and a wavy roof system"
@@ -107,8 +108,8 @@ import GalleryLayout from "../../layouts/GalleryLayout.astro";
     isToLoad={true}
   />
   <GalleryCard
-    cardImageUrl=`${import.meta.env.BASE_URL}/images/quangBinhOnsen.jpeg`
-    popupImageUrl=`${import.meta.env.BASE_URL}/images/quangBinhOnsen.jpeg`
+    cardImageUrl=`${baseUrl}/images/quangBinhOnsen.jpeg`
+    popupImageUrl=`${baseUrl}/images/quangBinhOnsen.jpeg`
     cardTitle="QUANG BINH ONSEN RESORT | QUANG BINH | 2020"
     popupTitle="QUANG BINH ONSEN RESORT | QUANG BINH | 2020"
     cardDescription="A resort-onsen spa with entertainment items and health care treatment services"
@@ -126,8 +127,8 @@ import GalleryLayout from "../../layouts/GalleryLayout.astro";
     isToLoad={true}
   />
   <GalleryCard
-    cardImageUrl=`${import.meta.env.BASE_URL}/images/novolandPhanThiet.jpeg`
-    popupImageUrl=`${import.meta.env.BASE_URL}/images/novolandPhanThiet.jpeg`
+    cardImageUrl=`${baseUrl}/images/novolandPhanThiet.jpeg`
+    popupImageUrl=`${baseUrl}/images/novolandPhanThiet.jpeg`
     cardTitle="NOVALAND PHAN THIET ONSEN RESORT | BINH THUAN | 2020"
     popupTitle="NOVALAND PHAN THIET ONSEN RESORT | BINH THUAN | 2020"
     cardDescription="A health care resort with traditional Japanese style"
@@ -147,8 +148,8 @@ import GalleryLayout from "../../layouts/GalleryLayout.astro";
     isToLoad={true}
   />
   <GalleryCard
-    cardImageUrl=`${import.meta.env.BASE_URL}/images/vanLangSkylake.jpeg`
-    popupImageUrl=`${import.meta.env.BASE_URL}/images/vanLangSkylake.jpeg`
+    cardImageUrl=`${baseUrl}/images/vanLangSkylake.jpeg`
+    popupImageUrl=`${baseUrl}/images/vanLangSkylake.jpeg`
     cardTitle="VAN LANG SKYLAKE | PHU THO| 2020"
     popupTitle="VAN LANG SKYLAKE | PHU THO| 2020"
     cardDescription="A new symbol of Viet Tri city, contributing to socio-economic development"
@@ -166,8 +167,8 @@ import GalleryLayout from "../../layouts/GalleryLayout.astro";
     isToLoad={true}
   />
   <GalleryCard
-    cardImageUrl=`${import.meta.env.BASE_URL}/images/centerPointBuilding.jpg`
-    popupImageUrl=`${import.meta.env.BASE_URL}/images/centerPointBuilding.jpg`
+    cardImageUrl=`${baseUrl}/images/centerPointBuilding.jpg`
+    popupImageUrl=`${baseUrl}/images/centerPointBuilding.jpg`
     cardTitle="CENTER POINT BUILDING | DA NANG | 2020"
     popupTitle="CENTER POINT BUILDING | DA NANG | 2020"
     cardDescription="A complex of commercial centers and apartments at a prime location in the heart of Da Nang city"

@@ -1,12 +1,13 @@
 ---
 import GalleryCard from "../../components/gallery/galleryCard/GalleryCard.astro";
 import GalleryLayout from "../../layouts/GalleryLayout.astro";
+const baseUrl = import.meta.env.DEV_BASE_URL || import.meta.env.BASE_URL;
 ---
 
 <GalleryLayout title="Typical Projects" subtitle="Interior - Landscape">
   <GalleryCard
-    cardImageUrl=`${import.meta.env.BASE_URL}/images/kawaraMyAn/kawaraMyAnInterior2.jpg`
-    popupImageUrl=`${import.meta.env.BASE_URL}/images/kawaraMyAn/kawaraMyAnInterior1.jpg`
+    cardImageUrl=`${baseUrl}/images/kawaraMyAn/kawaraMyAnInterior2.jpg`
+    popupImageUrl=`${baseUrl}/images/kawaraMyAn/kawaraMyAnInterior1.jpg`
     cardTitle="KAWARA MY AN ONSEN RESORT | HUE | 2016"
     popupTitle="KAWARA MY AN ONSEN RESORT | HUE | 2016"
     cardDescription="An international standard complex resort in Hue city"
@@ -25,30 +26,30 @@ import GalleryLayout from "../../layouts/GalleryLayout.astro";
         `
     galleryImages = {[
       {
-          imageUrl: `${import.meta.env.BASE_URL}/images/kawaraMyAn/kawaraMyAnInterior2.jpg`,
-          thumbUrl: `${import.meta.env.BASE_URL}/images/kawaraMyAn/kawaraMyAnInterior2-175x175.jpg`,
+          imageUrl: `${baseUrl}/images/kawaraMyAn/kawaraMyAnInterior2.jpg`,
+          thumbUrl: `${baseUrl}/images/kawaraMyAn/kawaraMyAnInterior2-175x175.jpg`,
       },
       {
-          imageUrl: `${import.meta.env.BASE_URL}/images/kawaraMyAn/kawaraMyAnInterior1.jpg`,
-          thumbUrl: `${import.meta.env.BASE_URL}/images/kawaraMyAn/kawaraMyAnInterior1-175x175.jpg`,
+          imageUrl: `${baseUrl}/images/kawaraMyAn/kawaraMyAnInterior1.jpg`,
+          thumbUrl: `${baseUrl}/images/kawaraMyAn/kawaraMyAnInterior1-175x175.jpg`,
       },
       {
-          imageUrl: `${import.meta.env.BASE_URL}/images/kawaraMyAn/kawaraMyAnInterior4.jpeg`,
-          thumbUrl: `${import.meta.env.BASE_URL}/images/kawaraMyAn/kawaraMyAnInterior4-175x175.jpeg`,
+          imageUrl: `${baseUrl}/images/kawaraMyAn/kawaraMyAnInterior4.jpeg`,
+          thumbUrl: `${baseUrl}/images/kawaraMyAn/kawaraMyAnInterior4-175x175.jpeg`,
       },
       {
-          imageUrl: `${import.meta.env.BASE_URL}/images/kawaraMyAn/kawaraMyAnInterior5.jpeg`,
-          thumbUrl: `${import.meta.env.BASE_URL}/images/kawaraMyAn/kawaraMyAnInterior5-175x175.jpeg`,
+          imageUrl: `${baseUrl}/images/kawaraMyAn/kawaraMyAnInterior5.jpeg`,
+          thumbUrl: `${baseUrl}/images/kawaraMyAn/kawaraMyAnInterior5-175x175.jpeg`,
       },
       {
-          imageUrl: `${import.meta.env.BASE_URL}/images/kawaraMyAn/kawaraMyAnInterior3.jpg`,
-          thumbUrl: `${import.meta.env.BASE_URL}/images/kawaraMyAn/kawaraMyAnInterior3-175x175.jpg`,
+          imageUrl: `${baseUrl}/images/kawaraMyAn/kawaraMyAnInterior3.jpg`,
+          thumbUrl: `${baseUrl}/images/kawaraMyAn/kawaraMyAnInterior3-175x175.jpg`,
       },
   ]}
   />
   <GalleryCard
-    cardImageUrl=`${import.meta.env.BASE_URL}/images/mikazukiInterior1.jpeg`
-    popupImageUrl=`${import.meta.env.BASE_URL}/images/mikazukiInterior2.jpeg`
+    cardImageUrl=`${baseUrl}/images/mikazukiInterior1.jpeg`
+    popupImageUrl=`${baseUrl}/images/mikazukiInterior2.jpeg`
     cardTitle="MIKAZUKI JAPANESE RESORT and SPA | DA NANG | 2017"
     popupTitle="MIKAZUKI JAPANESE RESORT and SPA | DA NANG | 2017"
     cardDescription="A resort complex with Japanese standard in Da Nang city"
@@ -67,8 +68,8 @@ import GalleryLayout from "../../layouts/GalleryLayout.astro";
         `
   />
   <GalleryCard
-    cardImageUrl=`${import.meta.env.BASE_URL}/images/grandvrioInterior1.jpg`
-    popupImageUrl=`${import.meta.env.BASE_URL}/images/grandvrioInterior2.jpg`
+    cardImageUrl=`${baseUrl}/images/grandvrioInterior1.jpg`
+    popupImageUrl=`${baseUrl}/images/grandvrioInterior2.jpg`
     cardTitle="GRANDVRIO CITY | DA NANG| 2019"
     popupTitle="GRANDVRIO CITY | DA NANG| 2019"
     cardDescription="A Japanese-style hotel in the center of Da Nang city"
@@ -85,8 +86,8 @@ import GalleryLayout from "../../layouts/GalleryLayout.astro";
         `
   />
   <GalleryCard
-    cardImageUrl=`${import.meta.env.BASE_URL}/images/danangGoldenBay.jpeg`
-    popupImageUrl=`${import.meta.env.BASE_URL}/images/danangGoldenBay.jpeg`
+    cardImageUrl=`${baseUrl}/images/danangGoldenBay.jpeg`
+    popupImageUrl=`${baseUrl}/images/danangGoldenBay.jpeg`
     cardTitle="DANANG GOLDEN BAY | DA NANG| 2019"
     popupTitle="DANANG GOLDEN BAY | DA NANG| 2019"
     cardDescription="A 5-star hotel with luxurious and classy resort services in Son Tra, Da Nang"
@@ -101,8 +102,8 @@ import GalleryLayout from "../../layouts/GalleryLayout.astro";
         `
   />
   <GalleryCard
-    cardImageUrl=`${import.meta.env.BASE_URL}/images/saikoSushi.jpeg`
-    popupImageUrl=`${import.meta.env.BASE_URL}/images/saikoSushi2.jpeg`
+    cardImageUrl=`${baseUrl}/images/saikoSushi.jpeg`
+    popupImageUrl=`${baseUrl}/images/saikoSushi2.jpeg`
     cardTitle="SAIKO SUSHI RESTAURANT | HO CHI MINH city | 2020"
     popupTitle="SAIKO SUSHI RESTAURANT | HO CHI MINH city | 2020"
     cardDescription="A traditional Japanese restaurant in the heart of Ho Chi Minh City"
@@ -117,8 +118,8 @@ import GalleryLayout from "../../layouts/GalleryLayout.astro";
         `
   />
   <GalleryCard
-    cardImageUrl=`${import.meta.env.BASE_URL}/images/greenDiamondHanoi.jpeg`
-    popupImageUrl=`${import.meta.env.BASE_URL}/images/greenDiamondHanoi.jpeg`
+    cardImageUrl=`${baseUrl}/images/greenDiamondHanoi.jpeg`
+    popupImageUrl=`${baseUrl}/images/greenDiamondHanoi.jpeg`
     cardTitle="GREEN DIAMOND | HANOI | 2021"
     popupTitle="GREEN DIAMOND | HANOI | 2021"
     cardDescription="A complex project of commercial centers, offices for rent and luxury apartments in the capital Hanoi"

@@ -9,6 +9,8 @@ export interface Props extends HTMLAttributes<"html"> {
 
 const { title = "Default Title", lang = "en", ...attributes } = Astro.props;
 export const partial = true;
+
+const baseUrl = import.meta.env.DEV_BASE_URL || import.meta.env.BASE_URL;
 ---
 
 <html thislng="en" lang={lang} {...attributes}>
@@ -18,26 +20,26 @@ export const partial = true;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Raymond Sekkei</title>
 
-    <script is:inline src={import.meta.env.BASE_URL + "/js/fontfaceobserver.js"}></script>
+    <script is:inline src={baseUrl + "/js/fontfaceobserver.js"}></script>
 
-    <script is:inline src={import.meta.env.BASE_URL + "/js/jquery/jquery-3.6.0.min.js"}></script>
+    <script is:inline src={baseUrl + "/js/jquery/jquery-3.6.0.min.js"}></script>
 
-    <script is:inline src={import.meta.env.BASE_URL + "/js/slick.js"}></script>
+    <script is:inline src={baseUrl + "/js/slick.js"}></script>
 
-    <script is:inline src={import.meta.env.BASE_URL + "/js/jquery.mousewheel.min.js"}></script>
+    <script is:inline src={baseUrl + "/js/jquery.mousewheel.min.js"}></script>
 
-    <script is:inline src={import.meta.env.BASE_URL + "/js/main.js"}></script>
+    <script is:inline src={baseUrl + "/js/main.js"}></script>
 
-    <link rel="stylesheet" href={import.meta.env.BASE_URL + "/css/companyProfile.css"} />
-    <link rel="stylesheet" href={import.meta.env.BASE_URL + "/css/jfn3mcb.css"} />
+    <link rel="stylesheet" href={baseUrl + "/css/companyProfile.css"} />
+    <link rel="stylesheet" href={baseUrl + "/css/jfn3mcb.css"} />
     <link
       rel="stylesheet"
       type="text/css"
-      href={import.meta.env.BASE_URL + "/css/slick.css"}
+      href={baseUrl + "/css/slick.css"}
       media="print"
       onload="this.media='all'"
     />
-    <link rel="stylesheet" href={import.meta.env.BASE_URL + "/css/set.css"} />
+    <link rel="stylesheet" href={baseUrl + "/css/set.css"} />
   </head>
 
   <body class="lang_en" id="toppage">
@@ -51,14 +53,14 @@ export const partial = true;
       </div>
     </div>
     <div class="header">
-      <a href={import.meta.env.BASE_URL + "/"} id="refreshButton" class="header__logo hover_o7">
+      <a href={baseUrl + "/"} id="refreshButton" class="header__logo hover_o7">
         <!-- <img
           src="https://hoshinoresorts.com/wpadmin2022/wp-content/uploads/2022/08/483b205ed9c25c13c31d18387ad03bfb-1200x120.png"
           alt="Raymond"
           class="ab_fit topload topload__pc__1 topload__sp__1"
         /> -->
         <img
-          src={import.meta.env.BASE_URL + "/images/logo03.png"}
+          src={baseUrl + "/images/logo03.png"}
           alt="Raymond"
           class="ab_fit topload topload__pc__1 topload__sp__1"
         />
@@ -76,14 +78,14 @@ export const partial = true;
       </script> -->
   
       <div class="header__menu pc">
-        <a href={import.meta.env.BASE_URL + "/planning"}
-          ><span class="topload topload__pc__2">Planning</span></a
+        <a href={import.meta.env.DEV_BASE_URL + "/planning"}
+          ><span class="topload topload__pc__2">Plannings</span></a
         >
-        <a href={import.meta.env.BASE_URL + "/architecture"}><span class="topload topload__pc__3">Architecture</span></a>
-        <a href={import.meta.env.BASE_URL + "/interior-landscape"}
+        <a href={import.meta.env.DEV_BASE_URL + "/architecture"}><span class="topload topload__pc__3">Architecture</span></a>
+        <a href={baseUrl + "/interior-landscape"}
           ><span class="topload topload__pc__3">Interior - Landscape</span></a
         >
-        <a href={import.meta.env.BASE_URL + "/#contact"}><span class="topload topload__pc__3">Contact</span></a>
+        <a href={baseUrl + "/#contact"}><span class="topload topload__pc__3">Contact</span></a>
         <!-- <a href="https://hoshinoresorts.com/en/activities"
           ><span class="topload topload__pc__4">Architecture</span></a
         >
@@ -101,13 +103,13 @@ export const partial = true;
     <div class="mainmenu">
       <div class="mainmenu__cont">
         <div class="mainmenu__cont1">
-          <div><a href={import.meta.env.BASE_URL + "/planning"}>Planning</a></div>
-          <div><a href={import.meta.env.BASE_URL + "/architecture"}>Architecture</a></div>
-          <div><a href={import.meta.env.BASE_URL + "/interior-landscape"}>Interior - Landscape</a></div>
-          <div><a href={import.meta.env.BASE_URL + "/#projects"}>Projects</a></div>
-          <div><a href={import.meta.env.BASE_URL + "/#awards"}>Awards</a></div>
-          <!-- <div><a href={import.meta.env.BASE_URL + "/#services"}>Services</a></div> -->
-          <div><a href={import.meta.env.BASE_URL + "/#news"}>News</a></div>
+          <div><a href={baseUrl + "/planning"}>Planning</a></div>
+          <div><a href={baseUrl + "/architecture"}>Architecture</a></div>
+          <div><a href={baseUrl + "/interior-landscape"}>Interior - Landscape</a></div>
+          <div><a href={baseUrl + "/#projects"}>Projects</a></div>
+          <div><a href={baseUrl + "/#awards"}>Awards</a></div>
+          <!-- <div><a href={baseUrl + "/#services"}>Services</a></div> -->
+          <div><a href={baseUrl + "/#news"}>News</a></div>
           <!-- <div><a href="/#company-principle">Our Principle</a></div> -->
           <!-- <div><a href="/#company-profile">Company Profile</a></div> -->
           <!-- <div><a href="/#founder">The Founder History</a></div> -->

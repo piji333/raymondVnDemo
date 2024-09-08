@@ -1,12 +1,13 @@
 ---
 import GalleryCard from "../../components/gallery/galleryCard/GalleryCard.astro";
 import GalleryLayout from "../../layouts/GalleryLayout.astro";
+const baseUrl = import.meta.env.DEV_BASE_URL || import.meta.env.BASE_URL;
 ---
 
 <GalleryLayout title="Typical Projects" subtitle="Planning">
   <GalleryCard
-    cardImageUrl=`${import.meta.env.BASE_URL}/images/ngoaVanHoThien.jpeg`
-    popupImageUrl=`${import.meta.env.BASE_URL}/images/ngoaVanHoThien.jpeg`
+    cardImageUrl=`${baseUrl}/images/ngoaVanHoThien.jpeg`
+    popupImageUrl=`${baseUrl}/images/ngoaVanHoThien.jpeg`
     cardTitle="NGOA VAN - HO THIEN TOURIST AREA | QUANG NINH | 2020"
     popupTitle="NGOA VAN - HO THIEN CULTURAL TOURIST AREA | QUANG NINH | 2020"
     cardDescription="The planning project for the area associated with historical relics of Buddha Hoang Tran Nhan Tong"
@@ -23,8 +24,8 @@ import GalleryLayout from "../../layouts/GalleryLayout.astro";
         `
   />
   <GalleryCard
-    cardImageUrl=`${import.meta.env.BASE_URL}/images/greenKingdom.jpeg`
-    popupImageUrl=`${import.meta.env.BASE_URL}/images/greenKingdom.jpeg`
+    cardImageUrl=`${baseUrl}/images/greenKingdom.jpeg`
+    popupImageUrl=`${baseUrl}/images/greenKingdom.jpeg`
     cardTitle="GREEN KINGDOM | TIEN GIANG | 2020"
     popupTitle="GREEN KINGDOM | TIEN GIANG | 2020"
     cardDescription="A new residence in a central location is convenient to develop according to the modern city model"
@@ -42,8 +43,8 @@ import GalleryLayout from "../../layouts/GalleryLayout.astro";
         `
   />
   <GalleryCard
-    cardImageUrl=`${import.meta.env.BASE_URL}/images/kimBang.jpeg`
-    popupImageUrl=`${import.meta.env.BASE_URL}/images/kimBang.jpeg`
+    cardImageUrl=`${baseUrl}/images/kimBang.jpeg`
+    popupImageUrl=`${baseUrl}/images/kimBang.jpeg`
     cardTitle="KIM BANG SPIRITUAL TOURISM AND RESORT | HA NAM | 2021"
     popupTitle="KIM BANG SPIRITUAL TOURISM AND RESORT | HA NAM | 2021"
     cardDescription="A tourism eco-city with diverse types of tourism resources"
@@ -60,8 +61,8 @@ import GalleryLayout from "../../layouts/GalleryLayout.astro";
         `
   />
   <GalleryCard
-    cardImageUrl=`${import.meta.env.BASE_URL}/images/tranNhanTongAcademy.jpg`
-    popupImageUrl=`${import.meta.env.BASE_URL}/images/tranNhanTongAcademy.jpg`
+    cardImageUrl=`${baseUrl}/images/tranNhanTongAcademy.jpg`
+    popupImageUrl=`${baseUrl}/images/tranNhanTongAcademy.jpg`
     cardTitle="TRAN NHAN TONG ACADEMY | QUANG NINH | 2021"
     popupTitle="TRAN NHAN TONG ACADEMY | QUANG NINH | 2021"
     cardDescription="A place to honor and contribute to the development of the fine quintessence of Buddhism with Vietnamese identity"
@@ -80,8 +81,8 @@ import GalleryLayout from "../../layouts/GalleryLayout.astro";
         `
   />
   <GalleryCard
-    cardImageUrl=`${import.meta.env.BASE_URL}/images/sonaseaResort.jpeg`
-    popupImageUrl=`${import.meta.env.BASE_URL}/images/sonaseaResort.jpeg`
+    cardImageUrl=`${baseUrl}/images/sonaseaResort.jpeg`
+    popupImageUrl=`${baseUrl}/images/sonaseaResort.jpeg`
     cardTitle="SONASEA RESORT | QUANG NINH | 2021"
     popupTitle="SONASEA RESORT | QUANG NINH | 2021"
     cardDescription="A resort complex with a prime location in the Sonasea Van Don Harbor City resort and tourism complex"
@@ -98,8 +99,8 @@ import GalleryLayout from "../../layouts/GalleryLayout.astro";
         `
   />
   <GalleryCard
-    cardImageUrl=`${import.meta.env.BASE_URL}/images/minhAnNursingHome.jpeg`
-    popupImageUrl=`${import.meta.env.BASE_URL}/images/minhAnNursingHome.jpeg`
+    cardImageUrl=`${baseUrl}/images/minhAnNursingHome.jpeg`
+    popupImageUrl=`${baseUrl}/images/minhAnNursingHome.jpeg`
     cardTitle="MINH AN NURSING HOME | HANOI | 2021"
     popupTitle="MINH AN NURSING HOME | HANOI | 2021"
     cardDescription="A living community for the elderly, suitable for Vietnamese activities"
@@ -119,8 +120,8 @@ import GalleryLayout from "../../layouts/GalleryLayout.astro";
     isToLoad={true}
   />
   <GalleryCard
-    cardImageUrl=`${import.meta.env.BASE_URL}/images/mocChauResort.jpeg`
-    popupImageUrl=`${import.meta.env.BASE_URL}/images/mocChauResort.jpeg`
+    cardImageUrl=`${baseUrl}/images/mocChauResort.jpeg`
+    popupImageUrl=`${baseUrl}/images/mocChauResort.jpeg`
     cardTitle="MOC CHAU ECO-TOURISM and RESORT | SON LA | 2021"
     popupTitle="MOC CHAU ECO-TOURISM and RESORT | SON LA | 2021"
     cardDescription="An eco-tourism and resort project in national tourist area Moc Chau, Son La"
