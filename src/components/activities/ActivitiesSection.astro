@@ -31,29 +31,29 @@ import ActivityCard from "./ActivityCard.astro";
                         topText=""
                         mainText="Urban Design and Planning"
                         subText=""
-                        imageUrl={Astro.site + "/images/starLakeOnsen.jpeg"}
-                        href="/planning"
+                        imageUrl={import.meta.env.BASE_URL + "/images/starLakeOnsen.jpeg"}
+                        href=`${import.meta.env.BASE_URL}/planning`
                     />
                     <ActivityCard 
                         topText=""
                         mainText="Architectural Design"
                         subText=""
                         imageUrl="https://static.wixstatic.com/media/c46c87_6e325275ce3b4c2684bade74c16ae95d~mv2.jpg/v1/fill/w_560,h_418,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Minh%20An%20View%201.jpg"
-                        href="/architecture"
+                        href=`${import.meta.env.BASE_URL}/architecture`
                     />
                     <ActivityCard 
                         topText=""
                         mainText="Interior Design"
                         subText=""
-                        imageUrl={Astro.site + "/images/saikoSushi.jpeg"}
-                        href="/interior-landscape"
+                        imageUrl={import.meta.env.BASE_URL + "/images/saikoSushi.jpeg"}
+                        href=`${import.meta.env.BASE_URL}/interior-landscape`
                     />
                     <ActivityCard 
                         topText=""
                         mainText="Landscape Design"
                         subText=""
                         imageUrl="https://static.wixstatic.com/media/c46c87_b4fa4a8ba5604877976de486b4a4599d~mv2.png/v1/fill/w_974,h_724,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/ThongDongGarden4.png"
-                        href="/interior-landscape"
+                        href=`${import.meta.env.BASE_URL}/interior-landscape`
                     />
                 </div>
             </div>
@@ -65,7 +65,7 @@ import ActivityCard from "./ActivityCard.astro";
                     </div>
                     <div {...{class:"controls__right hover_c", slt:"act__slide"}}><div class="hover_c_ar"></div></div>
                 </div>
-                <a href="/" class="wide_button noar">
+                <a href=`${import.meta.env.BASE_URL}/` class="wide_button noar">
                     <div class="wide_button__bg"></div>
                     <div class="wide_button__in">Explore More</div>
                     <div class="wide_button__ar"></div>

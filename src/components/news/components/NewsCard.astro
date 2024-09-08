@@ -25,7 +25,7 @@ const { imageUrl, date, description } = Astro.props;
                 <div class="card__cont__cont cf">
                     <div class="card__cont__cont1">
                         <div class="card__cont__logo">
-                            <div class="brandlogo" style="background-image:url(/images/logo02.png)"></div>
+                            <div class="brandlogo" style=`background-image:url(${import.meta.env.BASE_URL}/images/logo02.png)`></div>
                         </div>
                     </div>
                     <div class="card__cont__cont2">

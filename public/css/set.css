@@ -1221,7 +1221,7 @@ a {
   height: 0;
   padding-top: 61.1%;
   background-color: #eee;
-  background-image: url(../img/common/news_default_image.png);
+  /* background-image: url(../img/common/news_default_image.png); */
   position: relative;
   overflow: hidden;
 }
