@@ -2798,6 +2798,8 @@ textarea {
 .header__cab img {
   display: block;
 }
+
+/* for header menu spacing */
 .header__menu {
   position: absolute;
   top: 50%;
@@ -2811,11 +2813,17 @@ textarea {
     display: none;
   }
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1000px) {
   .header__menu {
     left: 270px;
   }
 }
+@media screen and (max-width: 860px) {
+  .header__menu {
+    left: 230px;
+  }
+}
+
 .header__menu a {
   display: inline-block;
   line-height: 100%;
@@ -2840,9 +2848,22 @@ textarea {
     border-bottom: solid 2px var(--color-primary-background);
   }
 }
+
+/* for header menu spacing */
 .header__menu a + a {
   margin-left: 49px;
 }
+@media screen and (max-width: 860px) {
+  .header__menu {
+    left: 230px;
+  }
+
+  .header__menu a + a {
+    margin-left: 25px;
+  }
+}
+
+
 .header__langr {
   position: absolute;
   right: 430px;
