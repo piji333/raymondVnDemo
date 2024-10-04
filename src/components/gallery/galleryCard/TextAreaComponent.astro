@@ -5,10 +5,7 @@ const { popupTitle, popupImageUrl, popupDescription, galleryImages } = Astro.pro
 const makeLiRawHTML = (myObject) => (`<li>
     <div class="gallery_detail">
         <a href="${myObject?.imageUrl}" rel="lightbox[group]" data-lightbox="image-1">
-            <noscript>
-                <img src="${myObject?.thumbUrl}" width="175" alt=""/>
-            </noscript>
-            <img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20175%20116.66666666667%22%3E%3C/svg%3E' data-src="${myObject?.thumbUrl}" width="175" alt=""/>
+            <img src="${myObject?.thumbUrl}" width="175" alt=""/>
         </a>
     </div>
 </li>`);
@@ -50,12 +47,6 @@ const rawHTML = galleryImages?.map(makeLiRawHTML).join('');
                 
             </main>
         
-            <script is:inline src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-            <script is:inline async data-noptimize="1" src='https://raymondsekkei.co.jp/wp/wp-content/plugins/autoptimize/classes/external/js/lazysizes.min.js?ao_version=3.1.11'></script>
-            <script is:inline type="text/javascript" id="cf7msm-js-extra">
-                var cf7msm_posted_data = [];
-            </script>
-            <script is:inline defer src="https://raymondsekkei.co.jp/wp/wp-content/cache/autoptimize/js/autoptimize_f47e5425c0901800523405e9377875df.js"></script>
         </div>
 
     </div>
